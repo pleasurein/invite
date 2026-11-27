@@ -10,7 +10,7 @@
 content="Rismah & Iwahh">
 
 <meta property="og:image"
-content="https://guest.pleasurein.my.id/rismah-iwahh/cover.jpg">
+content="https://invite.pleasurein.my.id/rismah-iwahh/cover.jpg">
 
 <meta property="og:image:type"
 content="image/jpeg">
@@ -22,7 +22,7 @@ content="1080">
 content="1350">
 
 <meta property="og:url"
-content="https://guest.pleasurein.my.id/rismah-iwahh">
+content="https://invite.pleasurein.my.id/rismah-iwahh">
 
 <meta property="og:type"
 content="website">
@@ -31,7 +31,7 @@ content="website">
 content="summary_large_image">
 
 <meta name="twitter:image"
-content="https://guest.pleasurein.my.id/rismah-iwahh/cover.jpg">
+content="https://invite.pleasurein.my.id/rismah-iwahh/cover.jpg">
 <style>
 *{
   margin:0;
@@ -76,7 +76,7 @@ body{
   margin-bottom:6px;
 }
 
-.guest{
+.invite{
   font-size:17px;
   font-weight:600;
   margin-bottom:14px;
@@ -122,7 +122,7 @@ body{
 <div class="cover">
   <div class="content">
     <div class="to">Dear,</div>
-    <div class="guest" id="guestName">Nama Tamu</div>
+    <div class="invite" id="inviteName">Nama Tamu</div>
     <div class="btn" id="openBtn">Buka Undangan</div>
   </div>
 </div>
@@ -142,10 +142,10 @@ body{
 // AMBIL NAMA TAMU ?to=
 // ======================
 const params = new URLSearchParams(window.location.search);
-const guest = params.get("to");
-if(guest){
-  document.getElementById("guestName").innerText =
-    decodeURIComponent(guest.replace(/\+/g," "));
+const invite = params.get("to");
+if(invite){
+  document.getElementById("inviteName").innerText =
+    decodeURIComponent(invite.replace(/\+/g," "));
 }
 
 // ======================
