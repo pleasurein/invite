@@ -10,7 +10,7 @@
 content="Anja & Nanda">
 
 <meta property="og:image"
-content="https://guest.pleasurein.my.id/anja-nanda/cover.jpg">
+content="https://invite.pleasurein.my.id/anja-nanda/cover.jpg">
 
 <meta property="og:image:type"
 content="image/jpeg">
@@ -22,7 +22,7 @@ content="1080">
 content="1350">
 
 <meta property="og:url"
-content="https://guest.pleasurein.my.id/anja-nanda">
+content="https://invite.pleasurein.my.id/anja-nanda">
 
 <meta property="og:type"
 content="website">
@@ -31,7 +31,7 @@ content="website">
 content="summary_large_image">
 
 <meta name="twitter:image"
-content="https://guest.pleasurein.my.id/anja-nanda/cover.jpg">
+content="https://invite.pleasurein.my.id/anja-nanda/cover.jpg">
 <style>
 *{
   margin:0;
@@ -82,7 +82,7 @@ body{
   opacity:.7;
 }
 
-.guest{
+.invite{
   font-size:14px;
   font-weight:600;
   margin:6px 0 14px;
@@ -127,7 +127,7 @@ body{
   <div class="cover-content">
     <div class="card">
       <div class="to">Kepada Yth.</div>
-      <div class="guest" id="guestName">Tamu Undangan</div>
+      <div class="invite" id="inviteName">Tamu Undangan</div>
       <div class="btn" id="openBtn">Buka Undangan</div>
     </div>
   </div>
@@ -146,11 +146,11 @@ body{
 <script>
 // Nama tamu (?to=)
 const params = new URLSearchParams(window.location.search);
-const guest = params.get("to");
+const invite = params.get("to");
 
-if(guest){
-  document.getElementById("guestName").innerText =
-    decodeURIComponent(guest.replace(/\+/g," "));
+if(invite){
+  document.getElementById("inviteName").innerText =
+    decodeURIComponent(invite.replace(/\+/g," "));
 }
 
 // MUSIC
